@@ -9,5 +9,5 @@ Navigate to `movies-list` and then run the following commands:
 ### Format the code 
 Run `npm run format`
 
-### Running Eslint
+### Running ESlint
 Run `npm run lint`
