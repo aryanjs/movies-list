@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Movie from '../Movie/index'
+import Movie from './Movie'
 import classes from './MoviesList.module.css'
 
 const MovieList = ({ movies }) => {
@@ -8,10 +8,10 @@ const MovieList = ({ movies }) => {
         <ul className={classes['movies-list']}>
             {movies.map((movie) => (
                 <Movie
-                    key={movie.episode_id}
+                    key={movie.id}
                     title={movie.title}
-                    releaseDate={movie.release_date}
-                    openingCrawl={movie.opening_crawl}
+                    releaseDate={movie.releaseDate}
+                    openingCrawl={movie.openingCrawl}
                     director={movie.director}
                 />
             ))}
